@@ -25,6 +25,7 @@ export async function fetchArticles() {
   const snapshot = await getDocs(
     query(collection(db, "articles"), orderBy("date", "desc"), limit(20))
   )
+  console.log(snapshot)
   return snapshot.docs.map((doc) => ({
     id: doc.id,
     ...doc.data(),

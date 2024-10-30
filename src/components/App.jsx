@@ -4,7 +4,7 @@ import Article from "./Article"
 import ArticleEntry from "./ArticleEntry"
 import { SignIn, SignOut } from "./Auth"
 import { useAuthentication } from "../services/authService"
-import { fetchArticles, createArticle } from "../services/articleService"
+import { fetchArticles, createArticle } from "../services/articleService.js"
 import "./App.css"
 
 export default function App() {
