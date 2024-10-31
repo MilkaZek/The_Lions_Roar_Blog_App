@@ -37,11 +37,13 @@ export default function App() {
     <div className="App">
       <header>
         The Lions' Roar
-        {user && <button onClick={() => setWriting(true)}>New Article</button>}
+        {/* {user && <button onClick={() => setWriting(true)}>New Article</button>} */}
         {!user ? <SignIn /> : <SignOut />}
       </header>
 
+      {user && <button onClick={() => setWriting(true)}>New Article</button>}
       {!user ? "" : <Nav articles={articles} setArticle={setArticle} />}
+
 
       {!user ? (
         ""

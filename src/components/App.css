@@ -47,7 +47,6 @@ nav,
 article {
   height: 100%;
   padding: 10px;
-  opacity: 0.4;
 }
 
 nav {
@@ -84,6 +83,7 @@ button {
   min-height: 30px;
   min-width: 80px;
   font-size: 15px;
+  margin-left: 15px;
 }
 
 button:hover {
@@ -91,3 +91,32 @@ button:hover {
   transition: 0.6s;
 }
 
+@media (max-width: 600px) {
+  header {
+    font-size: 8px; /* Reduce further */
+    padding: 5px 10px; /* Reduce padding */
+    flex-wrap: wrap; /* Ensure it stays in one line */
+    justify-content: space-evenly;
+  }
+  button {
+    height: 20px; /* Adjust height */
+    width: 50px; /* Adjust width */
+    padding: 3px; /* Reduce padding */
+    font-size: 8px; /* Smaller font */
+    margin-left: 5px; /* Adjust margin */
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    font-size: 16px; /* Adjust font size */
+    padding: 8px 15px; /* Reduce padding */
+  }
+  button {
+    height: 25px; /* Adjust height */
+    width: 60px; /* Adjust width */
+    padding: 5px; /* Maintain padding */
+    font-size: 10px; /* Adjust font size */
+    margin-left: 5px; /* Adjust margin */
+  }
+}
