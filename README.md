@@ -1,6 +1,6 @@
-The Lions Roar Blog App
+The Lions Roar Blog App (http://blog-starter-app-cmsi-2021.firebaseapp.com)
 
-Welcome to a blog for college experiences! Created by: Milka, Amelie, Charlize, 
+Welcome to a blog for college experiences! Created by: Milka Zekarias, Amelie Dinh, Charlize Briggs, Jonathan Wong, Matthew De Jesus
 
 Features-
 
@@ -12,5 +12,5 @@ Elegant UI Elements: The buttons throughout the application are styled with a sl
 
 Transparent Article Section: Articles are displayed in a transparent white section, allowing the beautiful background to subtly show through while maintaining readability. This thoughtful design choice creates a layered effect that keeps the focus on the content while still celebrating the university’s aesthetic.
 
-About the Project
+About the Project-
 The Lions Roar Blog App was created with the intention of providing a space for students to connect and share their unique college journeys. With user-friendly features, a contemporary design, and a commitment to fostering community engagement, this blog aims to be a cherished platform for all LMU students.
