@@ -8,10 +8,11 @@ body {
   url("https://library.lmu.edu/media/lmulibrary/images/2016Redesign_AboutLibrary.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   min-width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: scroll;
+
 }
 
 .App {
@@ -67,11 +68,22 @@ article {
 
 article .date {
   font-style: italic;
+  opacity: 0.9;
 }
 
 article .body {
   white-space: break-spaces;
+  opacity: 0.9
 }
+
+.articleBody {
+  background-color: #dee9ff;
+  opacity: 0.7;
+  padding: 10px;
+  margin: 5px;
+  width: 60%;
+}
+
 
 .error {
   background-color: red;
@@ -109,12 +121,20 @@ button:hover {
     font-size: 8px;
     margin-left: 5px;
   }
+  form input,
+  form textarea {
+    font-size: 15px;
+    width: 90%;
+  }
   body {
     background-size: cover;
   }
+  .articleBody {
+    width: 100%;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   header {
     font-size: 16px;
     padding: 8px 15px;
@@ -133,5 +153,8 @@ button:hover {
   }
   body {
     background-size: cover;
+  }
+  .articleBody {
+    width: 100%;
   }
 }
