@@ -8,8 +8,10 @@ body {
   url("https://library.lmu.edu/media/lmulibrary/images/2016Redesign_AboutLibrary.jpg");
   background-size: cover;
   background-position: center;
-  width: 100%;
+  background-repeat: no-repeat;
+  min-width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .App {
@@ -40,7 +42,9 @@ form {
 form input,
 form textarea {
   margin-bottom: 10px;
-  width: 300px;
+  font-size: 20px;
+  width: 500px;
+  border-radius: 5px;
 }
 
 nav,
@@ -93,30 +97,41 @@ button:hover {
 
 @media (max-width: 600px) {
   header {
-    font-size: 8px; /* Reduce further */
-    padding: 5px 10px; /* Reduce padding */
-    flex-wrap: wrap; /* Ensure it stays in one line */
+    font-size: 8px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
     justify-content: space-evenly;
   }
   button {
-    height: 20px; /* Adjust height */
-    width: 50px; /* Adjust width */
-    padding: 3px; /* Reduce padding */
-    font-size: 8px; /* Smaller font */
-    margin-left: 5px; /* Adjust margin */
+    height: 20px;
+    width: 50px;
+    padding: 3px;
+    font-size: 8px;
+    margin-left: 5px;
+  }
+  body {
+    background-size: cover;
   }
 }
 
 @media (max-width: 900px) {
   header {
-    font-size: 16px; /* Adjust font size */
-    padding: 8px 15px; /* Reduce padding */
+    font-size: 16px;
+    padding: 8px 15px;
   }
   button {
-    height: 25px; /* Adjust height */
-    width: 60px; /* Adjust width */
-    padding: 5px; /* Maintain padding */
-    font-size: 10px; /* Adjust font size */
-    margin-left: 5px; /* Adjust margin */
+    height: 25px;
+    width: 60px;
+    padding: 5px;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  form input,
+  form textarea {
+    font-size: 15px;
+    width: 90%;
+  }
+  body {
+    background-size: cover;
   }
 }
